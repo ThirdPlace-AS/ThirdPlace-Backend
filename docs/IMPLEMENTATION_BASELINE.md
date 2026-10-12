@@ -24,7 +24,7 @@ API  ->  domain service  ->  repository  ->  PostgreSQL/Supabase
 | Deliverable | State |
 |---|---|
 | Repository structure baseline | DONE — `backend/`, `migrations/`, `tests/`, `docs/` |
-| Stack baseline | DONE — Python 3.9+, FastAPI, Celery, Redis, Supabase client boundary |
+| Stack baseline | DONE — Python 3.12+, FastAPI, Celery, Redis, Supabase client boundary |
 | FastAPI app | DONE — `/health`, `/meta` only (no domain routes) |
 | Celery/Redis wiring | DONE — app + one no-op `ops.health` task |
 | Supabase boundary | DONE — lazy client from server-side env; no schema/RLS |

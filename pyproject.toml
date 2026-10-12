@@ -2,7 +2,7 @@
 name = "thirdplace-backend"
 version = "0.0.0"
 description = "ThirdPlace backend — scoring / ranking service (Phase 0 foundation)."
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115,<0.116",
     "uvicorn[standard]>=0.32,<0.33",
@@ -30,22 +30,22 @@ build-backend = "setuptools.build_meta"
 packages = ["backend"]
 
 [tool.ruff]
-target-version = "py39"
+target-version = "py312"
 line-length = 88
 src = ["backend", "tests"]
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B", "W"]
-# UP007 (Optional[X] -> X | Y) is unsafe under our 3.9 runtime target because
-# pydantic evaluates annotations at runtime; keep explicit Optional[...].
+# UP007 (Optional[X] -> X | Y): keep explicit Optional[...] for readability and
+# minimal diff; not a correctness issue on the 3.12 baseline.
 ignore = ["UP007"]
 
 [tool.black]
 line-length = 88
-target-version = ["py39"]
+target-version = ["py312"]
 
 [tool.mypy]
-python_version = "3.9"
+python_version = "3.12"
 strict = true
 warn_unused_configs = true
 ignore_missing_imports = true

@@ -16,7 +16,7 @@ specification is imported and founder-approved.
 
 ### Stack
 
-- Python 3.9+ · FastAPI · Uvicorn · Pydantic v2
+- Python 3.12+ · FastAPI · Uvicorn · Pydantic v2
 - Celery + Redis (broker/result)
 - Supabase (Postgres/PostGIS/Auth/Storage/Realtime) — client boundary only
 - Ruff · Black · mypy (strict) · pytest
