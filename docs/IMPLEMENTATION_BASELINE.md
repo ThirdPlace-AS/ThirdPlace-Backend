@@ -31,7 +31,7 @@ API  ->  domain service  ->  repository  ->  PostgreSQL/Supabase
 | Env/secrets checklist | DONE — `.env.example` (TP_* vars; service-role server-side only) |
 | Test infrastructure baseline | DONE — pytest + `/health` + `/meta` tests |
 | Lint / format / types | DONE — Ruff, Black, mypy (strict) |
-| Progressive CI (partial Gate 7) | DONE — ruff/black/mypy/pytest on PR; contract/migration/scenario CI is a placeholder |
+| Progressive CI (partial Gate 7) | GREEN — ruff/black/mypy/pytest pass on PR #1 (run 38291529397, Python 3.12); contract/migration/scenario CI is a placeholder |
 | Migrations | EMPTY — no schema invented |
 
 ## Canonical registry checks (status at Phase 0)

@@ -60,7 +60,7 @@
       "truth": "No repo changes or live CI results were verified by the package build.",
       "resolution_trigger": "Read-only audit plus actual commit/CI/native checks.",
       "status": "PARTIALLY_ADDRESSED",
-      "note": "Phase 0 adds real repo scaffolding + progressive CI (ruff/black/mypy/pytest). Full closure needs the contract/migration/scenario CI (Gate 7/8), blocked by TP-BLOCK-001/002/005."
+      "note": "Phase 0 added real repo scaffolding + progressive CI (ruff/black/mypy/pytest) — now GREEN on PR #1 (run 38291529397, Python 3.12). Full closure still needs the contract/migration/scenario CI (Gate 7/8), blocked by TP-BLOCK-001/002/005."
     }
   ],
   "conflicts_not_to_silently_settle": [
